@@ -7,9 +7,8 @@ const rateNumber = document.getElementById("rate-number");
 let checked = null;
 
 rate_el.addEventListener("click", (e) => {
-  removeChecked(rates);
-
   if (e.target.classList.contains("rate")) {
+    removeChecked(rates);
     e.target.classList.add("checked");
     checked = e.target;
   }
