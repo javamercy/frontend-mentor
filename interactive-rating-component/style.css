@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  color: #fff;
+  background-color: hsl(216, 12%, 8%);
+  font-size: 1rem;
+  max-height: 100vh;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-none {
+  display: none;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  flex-direction: column;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 0.7rem;
+  padding: 2rem;
+  max-width: 30rem;
+  min-height: 20rem;
+}
+.container .icon {
+  margin-bottom: 1rem;
+}
+.container .icon img {
+  background-color: hsl(214, 16%, 26%);
+  padding: 0.4rem;
+  border-radius: 50%;
+}
+
+.container h1 {
+  color: hsl(0, 0%, 100%);
+}
+
+.container p {
+  margin: 1rem auto;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  color: hsl(217, 12%, 63%);
+}
+
+.container ul {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.3rem;
+}
+
+.container ul li {
+  background-color: hsl(214, 16%, 26%);
+  color: hsl(217, 12%, 63%);
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color, color 0.2s ease;
+}
+
+.container ul li:not(.checked):hover {
+  background: #000;
+  color: #fff;
+}
+
+.container ul li:nth-child(4):hover {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+
+.container ul li:last-child:hover {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+}
+
+.rate.checked {
+  background-color: #fff;
+  color: #000;
+}
+
+.container .submit {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+  padding: 0.7rem;
+  border-radius: 1.5rem;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color, color 0.2s ease;
+}
+
+.container .submit:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.thank-container {
+  padding: auto 2rem;
+  background-color: hsl(212, 18%, 14%);
+
+  align-items: center;
+  justify-content: center;
+}
+
+.thank-container .svg {
+  margin-top: 1rem;
+}
+
+.thank-container .thank-rate {
+  background-color: hsl(214, 16%, 26%);
+  color: hsl(25, 88%, 48%);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem 1.5rem;
+  padding-top: 0.7rem;
+  margin: 2rem auto;
+  text-align: center;
+  border-radius: 1.3rem;
+}
+
+.thank-container h3 {
+  font-size: 2rem;
+}
+
+.thank-container .description {
+  color: hsl(217, 12%, 63%);
+  text-align: center;
+  line-height: 1.5rem;
+}
