@@ -55,6 +55,7 @@ body {
   font-size: 0.9rem;
   line-height: 1.3rem;
   color: hsl(217, 12%, 63%);
+  font-family: inherit;
 }
 
 .container ul {
@@ -146,4 +147,5 @@ body {
   color: hsl(217, 12%, 63%);
   text-align: center;
   line-height: 1.5rem;
+  font-family: inherit;
 }
